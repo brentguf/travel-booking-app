@@ -1,0 +1,64 @@
+
+// Logo
+
+.logo {
+  height: 3.25rem;
+}
+
+// Search
+
+.search {
+ 
+  &__input {
+    background-color: var(--color-grey-light-4);
+    border: none;
+    border-radius: 100px;
+    padding: .7rem .5rem;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__button {
+
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+// User navigation
+
+.user-nav {
+
+  &__icon-box {
+  
+  }
+
+  &__icon {
+    height: 2.25rem;
+    width: 2.25rem;
+  }
+
+  &__notification {
+
+  }
+
+  &__user {
+
+  }
+
+  &__user-picture {
+    border-radius: 50%;
+    height: 3.75rem;
+  }
+
+  &__user-name {
+
+  }
+  
+}
+

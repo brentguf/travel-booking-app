@@ -34,6 +34,29 @@ body {
   line-height: 1.6;
   min-height: 100vh; }
 
+.logo {
+  height: 3.25rem; }
+
+.search__input {
+  background-color: var(--color-grey-light-4);
+  border: none;
+  border-radius: 100px;
+  padding: .7rem .5rem; }
+  .search__input:focus {
+    outline: none; }
+
+.search__icon {
+  width: 2rem;
+  height: 2rem; }
+
+.user-nav__icon {
+  height: 2.25rem;
+  width: 2.25rem; }
+
+.user-nav__user-picture {
+  border-radius: 50%;
+  height: 3.75rem; }
+
 .container {
   box-shadow: var(--shadow-heavy);
   background-color: #fff;
@@ -42,7 +65,10 @@ body {
   min-height: 50rem; }
 
 .header {
+  align-items: center;
   background-color: #fff;
+  display: flex;
+  justify-content: space-between;
   height: 7rem; }
 
 .content {
