@@ -34,10 +34,12 @@ body {
   line-height: 1.6;
   min-height: 100vh; }
 
+/* Logo */
 .logo {
   height: 3.25rem;
   margin-left: 2rem; }
 
+/* Search */
 .search {
   align-items: center;
   display: flex;
@@ -51,9 +53,11 @@ body {
     font-weight: 300;
     margin-right: -3.25rem;
     padding: 1rem 2rem;
-    width: 90%; }
+    width: 90%;
+    transition: all .2s; }
     .search__input:focus {
-      outline: none; }
+      outline: none;
+      width: 100%; }
     .search__input::placeholder {
       color: var(--color-grey-light-4); }
   .search__button {
@@ -65,6 +69,7 @@ body {
     width: 2rem;
     height: 2rem; }
 
+/* User navigation */
 .user-nav__icon {
   height: 2.25rem;
   width: 2.25rem; }
