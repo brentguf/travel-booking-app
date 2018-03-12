@@ -35,19 +35,35 @@ body {
   min-height: 100vh; }
 
 .logo {
-  height: 3.25rem; }
+  height: 3.25rem;
+  margin-left: 2rem; }
 
-.search__input {
-  background-color: var(--color-grey-light-4);
-  border: none;
-  border-radius: 100px;
-  padding: .7rem .5rem; }
-  .search__input:focus {
-    outline: none; }
-
-.search__icon {
-  width: 2rem;
-  height: 2rem; }
+.search {
+  align-items: center;
+  display: flex;
+  flex: 0 0 40%; }
+  .search__input {
+    background-color: var(--color-grey-light-3);
+    border: none;
+    border-radius: 100px;
+    font-family: inherit;
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-right: -3.25rem;
+    padding: 1rem 2rem;
+    width: 90%; }
+    .search__input:focus {
+      outline: none; }
+    .search__input::placeholder {
+      color: var(--color-grey-light-4); }
+  .search__button {
+    background-color: var(--color-grey-light-3);
+    border: none;
+    cursor: pointer; }
+  .search__icon {
+    fill: var(--color-grey-dark-3);
+    width: 2rem;
+    height: 2rem; }
 
 .user-nav__icon {
   height: 2.25rem;
