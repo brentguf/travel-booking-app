@@ -158,6 +158,16 @@ body {
     width: 100%;
     height: auto; }
 
+/* Hotel Overview */
+.overview {
+  display: flex; }
+  .overview__stars {
+    margin-right: auto; }
+  .overview__icon-star, .overview__icon-location {
+    fill: var(--color-primary);
+    width: 2rem;
+    height: 2rem; }
+
 .container {
   box-shadow: var(--shadow-heavy);
   background-color: #fff;
@@ -184,5 +194,4 @@ body {
   height: 50rem; }
 
 .hotel-view {
-  background-color: tomato;
   flex: 1; }
