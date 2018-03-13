@@ -175,6 +175,7 @@
   display: flex;
 
   &__photo {
+    display: block;
     width: 100%;
     height: auto;
   }
@@ -184,9 +185,13 @@
 
 .overview {
   display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--color-grey-light-2);
 
   &__heading {
-
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 1.5rem 3rem;
   }
 
   &__stars {
@@ -200,19 +205,56 @@
     height: 2rem;
   }
 
+  &__icon-location {
+    margin-right: .5rem;
+  }
+
   &__location {
-    
+    font-size: 1.2rem;
+    display: flex;
+    margin-right: 2.5rem;
   }
 
   &__rating {
-
+    background-color: var(--color-primary);
+    color: #fff;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem 1.2rem;
+    text-align: center;
+    align-self: stretch;
   }
 
   &__rating-average {
-
+    font-size: 2.2rem;
+    font-weight: 300;
   }
 
   &__rating-count {
-    
+    font-size: .9rem;
+    text-transform: uppercase;
+  }
+}
+
+/* Inline button */
+
+.btn-inline {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: none;
+  border-bottom: 2px solid currentColor;
+  display: inline-block;
+  font-size: inherit;
+  padding-bottom: 2px;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--color-grey-dark-1);
+  }
+
+  &:focus {
+    outline: none;
   }
 }
