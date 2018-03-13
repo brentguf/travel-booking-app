@@ -56,9 +56,22 @@
 /* User navigation */
 
 .user-nav {
+  display: flex;
+  align-self: stretch;
+
+  & > * {
+    cursor: pointer;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      background-color: var(--color-grey-light-4);
+    }
+  }
 
   &__icon-box {
-  
+    position: relative;
   }
 
   &__icon {
@@ -67,20 +80,22 @@
   }
 
   &__notification {
-
-  }
-
-  &__user {
-
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 1rem;
+    right: 1.1rem;
   }
 
   &__user-picture {
     border-radius: 50%;
     height: 3.75rem;
-  }
-
-  &__user-name {
-
   }
   
 }
