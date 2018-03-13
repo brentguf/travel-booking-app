@@ -102,3 +102,48 @@
   
 }
 
+/* Side nav */
+
+.side-nav {
+  margin-top: 3rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+
+  &__item {
+    cursor: pointer;
+    list-style: none;
+  }
+
+  &__link {
+    color: var(--color-grey-light-1);
+    display: flex;
+    text-decoration: none;
+    padding: 1.5rem 2rem;
+
+    &--active,
+    &:hover {
+      background-color: var(--color-primary);
+    }
+
+    &:active {
+      background-color: var(--color-primary-light);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+    height: 2rem;
+    width: 2rem;
+    margin-right: 2rem;
+  }
+
+}
+
+.legal {
+  text-align: center;
+  padding: 2rem 0;
+}
