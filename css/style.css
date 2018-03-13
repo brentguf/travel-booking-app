@@ -152,6 +152,12 @@ body {
   padding: 2rem 0; }
 
 /* Gallery */
+.gallery {
+  display: flex; }
+  .gallery__photo {
+    width: 100%;
+    height: auto; }
+
 .container {
   box-shadow: var(--shadow-heavy);
   background-color: #fff;
