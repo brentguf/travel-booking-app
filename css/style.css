@@ -83,7 +83,7 @@ body {
     display: flex;
     align-items: center; }
     .user-nav > *:hover {
-      background-color: var(--color-grey-light-4); }
+      background-color: var(--color-grey-light-3); }
   .user-nav__icon-box {
     position: relative; }
   .user-nav__icon {
