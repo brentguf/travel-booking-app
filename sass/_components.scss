@@ -173,6 +173,11 @@
     position: relative;
     z-index: 10;
 
+    @media only screen and (max-width: $bp-smallest) {
+      align-items: center;
+      flex-direction: column;
+    }
+
     &:not(:last-child) {
       margin-bottom: 1rem;
     }
@@ -183,6 +188,11 @@
     height: 2rem;
     width: 2rem;
     margin-right: 2rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      margin-right: 0;
+      margin-bottom: .5rem;  
+    }
   }
 
 }
@@ -219,10 +229,17 @@
     font-weight: 300;
     text-transform: uppercase;
     padding: 1.5rem 3rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 1.7rem;
+      padding: 1rem;
+    }
   }
 
   &__stars {
     margin-right: auto;
+    display: flex;
+    align-items: center;
   }
 
   &__icon-star,
@@ -230,6 +247,11 @@
     fill: var(--color-primary);
     width: 2rem;
     height: 2rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      width: 1.4rem;
+      height: 1.4rem;
+    }
   }
 
   &__icon-location {
@@ -252,16 +274,28 @@
     padding: 1rem 1.2rem;
     text-align: center;
     align-self: stretch;
+
+    @media only screen and (max-width: $bp-smallest) {
+      
+    }
   }
 
   &__rating-average {
     font-size: 2.2rem;
     font-weight: 300;
+
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 1.6rem;
+    }
   }
 
   &__rating-count {
     font-size: .9rem;
     text-transform: uppercase;
+
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: .7rem;
+    }
   }
 }
 
