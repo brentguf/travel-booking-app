@@ -454,3 +454,10 @@
     }
   }
 }
+
+/* Highlight */
+
+span.highlight {
+  color: darken(currentColor, 30%);
+  font-weight: bold;
+}

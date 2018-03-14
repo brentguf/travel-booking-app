@@ -345,6 +345,11 @@ body {
     .cta__btn:hover .cta__btn--invisible {
       top: 0; }
 
+/* Highlight */
+span.highlight {
+  color: var(--color-grey-dark-1);
+  font-weight: bold; }
+
 .container {
   box-shadow: var(--shadow-heavy);
   background-color: #fff;
