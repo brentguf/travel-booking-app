@@ -51,6 +51,11 @@ body {
   justify-content: center;
   display: flex;
   flex: 0 0 40%; }
+  @media only screen and (max-width: 37.5em) {
+    .search {
+      order: 1;
+      flex-basis: 100%;
+      background-color: var(--color-grey-light-3); } }
   .search__input {
     background-color: var(--color-grey-light-3);
     border: none;
@@ -421,6 +426,11 @@ span.highlight {
   font-size: 1.4rem;
   justify-content: space-between;
   height: 7rem; }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      align-content: space-around;
+      flex-wrap: wrap;
+      height: 12rem; } }
 
 .content {
   display: flex; }
