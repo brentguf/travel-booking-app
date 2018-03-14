@@ -250,8 +250,17 @@
   padding-bottom: 2px;
   cursor: pointer;
 
+  & span {
+    margin-left: 0;
+    transition: margin-left .2s;
+  }
+
   &:hover {
     color: var(--color-grey-dark-1);
+
+    & span {
+      margin-left: .3rem;
+    }
   }
 
   &:focus {
@@ -385,4 +394,7 @@
     line-height: 1;
     z-index: 1;
   }
+
+  
+
 }
