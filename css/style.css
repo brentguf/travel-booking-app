@@ -81,9 +81,9 @@ body {
   align-self: stretch; }
   .user-nav > * {
     cursor: pointer;
-    padding: 0 2rem;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    padding: 0 2rem; }
     .user-nav > *:hover {
       background-color: var(--color-grey-light-3); }
   .user-nav__icon-box {
@@ -105,8 +105,12 @@ body {
     top: 1rem;
     right: 1.1rem; }
   .user-nav__user-picture {
+    display: inline-block;
     border-radius: 50%;
-    height: 3.75rem; }
+    height: 3.75rem;
+    margin-right: 1rem; }
+  .user-nav__user-picture {
+    font-weight: 300; }
 
 /* Side nav */
 .side-nav {
@@ -347,7 +351,7 @@ body {
 
 /* Highlight */
 span.highlight {
-  color: var(--color-grey-dark-1);
+  color: #4d4d4d;
   font-weight: bold; }
 
 .container {

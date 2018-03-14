@@ -62,9 +62,9 @@
 
   & > * {
     cursor: pointer;
-    padding: 0 2rem;
     display: flex;
     align-items: center;
+    padding: 0 2rem;
 
     &:hover {
       background-color: var(--color-grey-light-3);
@@ -96,8 +96,14 @@
   }
 
   &__user-picture {
+    display: inline-block;
     border-radius: 50%;
     height: 3.75rem;
+    margin-right: 1rem;
+  }
+
+  &__user-picture {
+    font-weight: 300;
   }
   
 }
@@ -458,6 +464,6 @@
 /* Highlight */
 
 span.highlight {
-  color: darken(currentColor, 30%);
+  color: lighten(black, 30%);
   font-weight: bold;
 }
