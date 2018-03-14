@@ -348,6 +348,9 @@ body {
     @media only screen and (max-width: 46.875em) {
       .review__rating {
         display: none; } }
+    @media only screen and (max-width: 37.5em) {
+      .review__rating {
+        display: block; } }
   .review::before {
     content: "\201C";
     color: var(--color-grey-light-2);
@@ -441,6 +444,9 @@ span.highlight {
   border-bottom: var(--line);
   display: flex;
   padding: 4rem; }
+  @media only screen and (max-width: 37.5em) {
+    .details {
+      flex-direction: column; } }
 
 .description {
   background-color: #fff;
@@ -448,6 +454,10 @@ span.highlight {
   flex: 0 0 60%;
   margin-right: 4rem;
   padding: 3rem; }
+  @media only screen and (max-width: 37.5em) {
+    .description {
+      margin-right: 0;
+      margin-bottom: 2rem; } }
 
 .user-reviews {
   display: flex;
