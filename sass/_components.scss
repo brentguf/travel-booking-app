@@ -115,14 +115,31 @@
   font-size: 1.4rem;
   font-weight: 300;
 
+  @media only screen and (max-width: $bp-medium) {
+    margin: 0;
+    display: flex;
+  }
+
   &__item {
     cursor: pointer;
     list-style: none;
     position: relative;
+    
+    @media only screen and (max-width: $bp-medium) {
+      display: flex;
+      justify-content: center;
+      flex: 1;
+
+    }
 
     &:not(:last-child) {
       margin-bottom: .5rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        margin-bottom: 0;
+      }
     }
+    
   }
 
   &__item::before {
@@ -173,6 +190,10 @@
 .legal {
   text-align: center;
   padding: 2rem 0;
+
+  @media only screen and (max-width: $bp-medium) {
+    display: none;
+  }
 }
 
 /* Gallery */
