@@ -275,6 +275,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between; }
+  .recommend__friends {
+    display: flex; }
   .recommend__photo {
     border: 3px solid #fff;
     box-sizing: content-box;
