@@ -412,6 +412,10 @@
     font-size: 2.2rem;
     font-weight: 300;
     color: var(--color-primary);
+
+    @media only screen and (max-width: $bp-small) {
+      display: none;
+    }
   }
 
   &::before {
