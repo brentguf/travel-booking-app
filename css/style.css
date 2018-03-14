@@ -308,6 +308,43 @@ body {
     line-height: 1;
     z-index: 1; }
 
+/*  CTA button */
+.cta {
+  text-align: center;
+  margin: 4rem; }
+  .cta__book-now {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 2rem; }
+  .cta__btn {
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden; }
+    .cta__btn:hover {
+      background-image: linear-gradient(to right, var(--color-primary-dark), var(--color-primary-light)); }
+    .cta__btn > * {
+      display: inline-block;
+      transition: all .2s;
+      width: 100%; }
+    .cta__btn--visible {
+      padding: 1.5rem 7.5rem; }
+    .cta__btn:hover .cta__btn--visible {
+      transform: translateY(100%); }
+    .cta__btn--invisible {
+      position: absolute;
+      top: -100%;
+      left: 0;
+      padding: 1.5rem 0; }
+    .cta__btn:hover .cta__btn--invisible {
+      top: 0; }
+
 .container {
   box-shadow: var(--shadow-heavy);
   background-color: #fff;
