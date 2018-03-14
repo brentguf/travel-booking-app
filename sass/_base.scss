@@ -37,6 +37,10 @@ $bp-medium: 56.25em;
 html {
   font-size: 62.5%; // makes 1rem = 10px
   box-sizing: border-box;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
 }
 
 body {
