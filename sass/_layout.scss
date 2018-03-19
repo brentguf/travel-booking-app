@@ -25,6 +25,10 @@
   }
 }
 
+.header:hover + .content {
+  pointer-events: none;
+}
+
 .content {
   display: flex;
 

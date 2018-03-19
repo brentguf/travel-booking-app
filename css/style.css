@@ -470,6 +470,9 @@ span.highlight {
       flex-wrap: wrap;
       height: 12rem; } }
 
+.header:hover + .content {
+  pointer-events: none; }
+
 .content {
   display: flex; }
   @media only screen and (max-width: 56.25em) {
