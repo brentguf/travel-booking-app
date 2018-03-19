@@ -116,33 +116,36 @@
 
   // Display user menu when hovering username
   &__user:hover {
-    .user-nav__menu-list {
-      display: flex;
+    .user-nav__menu {
+      display: block;
     }
   }
 
   &__menu {
+    display: none;
     position: absolute;
     top: 7rem;
     right: 0;
     width: 200px;
     background-color: #fff;
     box-shadow: var(--shadow-heavy);
+    padding: 2rem 0 1rem;
 
     &-list {
-      display: none;
+      display: flex;
       flex-direction: column;
       justify-content: center;
-      
-
       list-style: none;
-
     }
 
     &-link {
       display: flex;
       align-items: center;
-      padding: 1.5rem 2rem;
+      padding: 1rem 2rem;
+
+      &:hover {
+        background-color: var(--color-grey-light-3);
+      }
     }
 
     &-icon {

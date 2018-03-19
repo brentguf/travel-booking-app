@@ -120,24 +120,28 @@ body {
     margin-right: 1rem; }
   .user-nav__user-picture {
     font-weight: 300; }
-  .user-nav__user:hover .user-nav__menu-list {
-    display: flex; }
+  .user-nav__user:hover .user-nav__menu {
+    display: block; }
   .user-nav__menu {
+    display: none;
     position: absolute;
     top: 7rem;
     right: 0;
     width: 200px;
     background-color: #fff;
-    box-shadow: var(--shadow-heavy); }
+    box-shadow: var(--shadow-heavy);
+    padding: 2rem 0 1rem; }
     .user-nav__menu-list {
-      display: none;
+      display: flex;
       flex-direction: column;
       justify-content: center;
       list-style: none; }
     .user-nav__menu-link {
       display: flex;
       align-items: center;
-      padding: 1.5rem 2rem; }
+      padding: 1rem 2rem; }
+      .user-nav__menu-link:hover {
+        background-color: var(--color-grey-light-3); }
     .user-nav__menu-icon {
       margin-right: 1.5rem; }
 
