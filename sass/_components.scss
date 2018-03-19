@@ -130,6 +130,7 @@
     background-color: #fff;
     box-shadow: var(--shadow-heavy);
     padding: 2rem 0 1rem;
+    z-index: 10;
 
     &::before {
       content: '';
@@ -228,7 +229,6 @@
     text-decoration: none;
     padding: 1.5rem 2rem;
     position: relative;
-    z-index: 10;
 
     @media only screen and (max-width: $bp-smallest) {
       align-items: center;
