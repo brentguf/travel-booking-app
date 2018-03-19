@@ -97,7 +97,7 @@ body {
       background-color: var(--color-grey-light-3); }
   .user-nav__icon-box {
     position: relative; }
-  .user-nav__icon {
+  .user-nav__icon, .user-nav__menu-icon {
     height: 2.25rem;
     width: 2.25rem; }
   .user-nav__notification {
@@ -121,15 +121,25 @@ body {
   .user-nav__user-picture {
     font-weight: 300; }
   .user-nav__user:hover .user-nav__menu {
-    display: block; }
+    display: flex; }
   .user-nav__menu {
     display: none;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: var(--shadow-heavy);
+    padding: 1rem 0;
     position: absolute;
     top: 7rem;
     right: 0;
     width: 200px;
     list-style: none;
-    background-color: inherit; }
+    background-color: #fff; }
+    .user-nav__menu-item {
+      display: flex;
+      align-items: center;
+      padding: 1.5rem 2rem; }
+    .user-nav__menu-icon {
+      margin-right: 1.5rem; }
 
 /* Side nav */
 .side-nav {

@@ -82,7 +82,8 @@
     position: relative;
   }
 
-  &__icon {
+  &__icon,
+  &__menu-icon {
     height: 2.25rem;
     width: 2.25rem;
   }
@@ -116,12 +117,16 @@
   // Display user menu when hovering username
   &__user:hover {
     .user-nav__menu {
-      display: block;
+      display: flex;
     }
   }
 
   &__menu {
     display: none;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: var(--shadow-heavy);
+    padding: 1rem 0;
 
     position: absolute;
     top: 7rem;
@@ -129,10 +134,16 @@
     width: 200px;
 
     list-style: none;
-    background-color: inherit;
+    background-color: #fff;
 
     &-item {
+      display: flex;
+      align-items: center;
+      padding: 1.5rem 2rem;
+    }
 
+    &-icon {
+      margin-right: 1.5rem;
     }
   }
   
