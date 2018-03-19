@@ -120,21 +120,21 @@ body {
     margin-right: 1rem; }
   .user-nav__user-picture {
     font-weight: 300; }
-  .user-nav__user:hover .user-nav__menu {
+  .user-nav__user:hover .user-nav__menu-list {
     display: flex; }
   .user-nav__menu {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    box-shadow: var(--shadow-heavy);
-    padding: 1rem 0;
     position: absolute;
     top: 7rem;
     right: 0;
     width: 200px;
-    list-style: none;
-    background-color: #fff; }
-    .user-nav__menu-item {
+    background-color: #fff;
+    box-shadow: var(--shadow-heavy); }
+    .user-nav__menu-list {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      list-style: none; }
+    .user-nav__menu-link {
       display: flex;
       align-items: center;
       padding: 1.5rem 2rem; }
