@@ -86,7 +86,8 @@ body {
 /* User navigation */
 .user-nav {
   display: flex;
-  align-self: stretch; }
+  align-self: stretch;
+  position: relative; }
   .user-nav > * {
     cursor: pointer;
     display: flex;
@@ -119,6 +120,16 @@ body {
     margin-right: 1rem; }
   .user-nav__user-picture {
     font-weight: 300; }
+  .user-nav__user:hover .user-nav__menu {
+    display: block; }
+  .user-nav__menu {
+    display: none;
+    position: absolute;
+    top: 7rem;
+    right: 0;
+    width: 200px;
+    list-style: none;
+    background-color: inherit; }
 
 /* Side nav */
 .side-nav {

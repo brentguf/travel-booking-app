@@ -65,6 +65,7 @@
 .user-nav {
   display: flex;
   align-self: stretch;
+  position: relative;
 
   & > * {
     cursor: pointer;
@@ -101,12 +102,6 @@
     right: 1.1rem;
   }
 
-  &__user {
-    &:hover {
-      
-    }
-  }
-
   &__user-picture {
     display: inline-block;
     border-radius: 50%;
@@ -117,6 +112,31 @@
   &__user-picture {
     font-weight: 300;
   }
+
+  // Display user menu when hovering username
+  &__user:hover {
+    .user-nav__menu {
+      display: block;
+    }
+  }
+
+  &__menu {
+    display: none;
+
+    position: absolute;
+    top: 7rem;
+    right: 0;
+    width: 200px;
+
+    list-style: none;
+    background-color: inherit;
+
+    &-item {
+
+    }
+  }
+  
+  
   
 }
 
