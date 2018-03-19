@@ -131,6 +131,14 @@ body {
     background-color: #fff;
     box-shadow: var(--shadow-heavy);
     padding: 2rem 0 1rem; }
+    .user-nav__menu::before {
+      content: '';
+      position: absolute;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid #fff;
+      top: -1rem;
+      left: 12.5rem; }
     .user-nav__menu-list {
       display: flex;
       flex-direction: column;
